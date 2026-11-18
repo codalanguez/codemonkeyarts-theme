@@ -4,6 +4,6 @@
 
 The screenshot in `assets/` is captured from the live site without the WordPress admin toolbar. The matching media attachment is 10022.
 
-This is a public portfolio showcase with a live demo. It does not expose the private GitHub repository or claim public download availability.
+The showcase offers a direct [Signal Lab 1.0.2 theme ZIP download](https://github.com/codalanguez/codemonkeyarts-theme/releases/download/v1.0.2/codemonkeyarts-1.0.2.zip), the [public source repository](https://github.com/codalanguez/codemonkeyarts-theme), a live demo, version requirements, and installation instructions. The release ZIP contains the theme only; the page examples here are available separately in the repository.
 
 Published WordPress page ID: 10023. Mascot media attachment: 10028; WordPress generates the site-icon sizes separately. The homepage card sits after Haunted Tech as exhibit_03. Header and page layout support are included in theme 1.0.2.

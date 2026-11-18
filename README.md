@@ -4,6 +4,10 @@ A dedicated classic WordPress theme for [codemonkeyarts.com](https://codemonkeya
 
 Signal Lab shares the Forum / Cormorant Garamond typography, dark theatrical atmosphere, and antique-gold signature of Coda Languez's author site. Its own identity pairs antique-gold headings and actions with cyan circuitry, magenta chromatic offsets, and a terminal illustration. The focus is creative engineering: apps, workflows, and experiments that turn ideas into working creative tools.
 
+## Download
+
+[Download Signal Lab 1.0.2](https://github.com/codalanguez/codemonkeyarts-theme/releases/download/v1.0.2/codemonkeyarts-1.0.2.zip) as an installable WordPress theme ZIP. Visit the [theme page](https://codemonkeyarts.com/signal-lab/) for a preview, features, and installation instructions. Source and releases are public.
+
 ## Build and install
 
 Requires WordPress 6.0+ and PHP 7.4+. Run `python build.py` to create `dist/codemonkeyarts-1.0.2.zip`. Upload that ZIP under Appearance → Themes → Add Theme → Upload Theme, preview, then activate **CodeMonkeyArts Signal Lab**.
