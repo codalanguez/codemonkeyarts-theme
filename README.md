@@ -2,11 +2,11 @@
 
 A dedicated classic WordPress theme for [codemonkeyarts.com](https://codemonkeyarts.com/). CodeMonkeyArts is always one word.
 
-Signal Lab shares the Forum / Cormorant Garamond typography, dark theatrical atmosphere, and antique-gold signature of Coda Languez's author site. Its own identity uses cyan circuitry, magenta chromatic offsets, a terminal illustration, and a technology-focused portfolio.
+Signal Lab shares the Forum / Cormorant Garamond typography, dark theatrical atmosphere, and antique-gold signature of Coda Languez's author site. Its own identity pairs antique-gold headings and actions with cyan circuitry, magenta chromatic offsets, and a terminal illustration. The focus is creative engineering: apps, workflows, and experiments that turn ideas into working creative tools.
 
 ## Build and install
 
-Requires WordPress 6.0+ and PHP 7.4+. Run `python build.py` to create `dist/codemonkeyarts-1.0.0.zip`. Upload that ZIP under Appearance → Themes → Add Theme → Upload Theme, preview, then activate **CodeMonkeyArts Signal Lab**.
+Requires WordPress 6.0+ and PHP 7.4+. Run `python build.py` to create `dist/codemonkeyarts-1.0.1.zip`. Upload that ZIP under Appearance → Themes → Add Theme → Upload Theme, preview, then activate **CodeMonkeyArts Signal Lab**.
 
 Set Settings → Reading to a static homepage containing the Lab project content. The theme supplies the new front-page hero; `assets/signal.css` suppresses the legacy `.cl-lab-hero` only on the homepage. Existing Lab, MechApe and Haunted Tech content remains editable in WordPress. This theme does not import page content or change publication status. MechApe Image Studio remains a draft on the production site.
 

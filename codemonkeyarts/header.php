@@ -10,7 +10,7 @@
 <a class="skip-link" href="#lab-main"><?php esc_html_e('Skip to content', 'codemonkeyarts'); ?></a>
 <?php cma_social_bar(); ?>
 <header class="site-head"><div class="site-bar">
-<a class="site-mark" aria-label="<?php esc_attr_e('CodeMonkeyArts home', 'codemonkeyarts'); ?>" href="<?php echo esc_url(home_url('/')); ?>"><span class="cma-wordmark" data-text="CodeMonkeyArts" aria-hidden="true"><?php esc_html_e('CodeMonkeyArts', 'codemonkeyarts'); ?></span><small aria-hidden="true"><?php esc_html_e('CREATIVE TECHNOLOGY / SLIGHTLY HAUNTED', 'codemonkeyarts'); ?></small></a>
+<a class="site-mark" aria-label="<?php esc_attr_e('CodeMonkeyArts home', 'codemonkeyarts'); ?>" href="<?php echo esc_url(home_url('/')); ?>"><span class="cma-wordmark" data-text="CodeMonkeyArts" aria-hidden="true"><?php esc_html_e('CodeMonkeyArts', 'codemonkeyarts'); ?></span><small aria-hidden="true"><?php esc_html_e('CREATIVE ENGINEERING / SLIGHTLY HAUNTED', 'codemonkeyarts'); ?></small></a>
 <nav class="site-nav" aria-label="<?php esc_attr_e('Main', 'codemonkeyarts'); ?>">
 <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'fallback_cb' => 'cma_default_navigation', 'depth' => 1)); ?>
 <a href="https://codalanguez.com/">Coda Languez ↗</a>
