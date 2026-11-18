@@ -1,0 +1,27 @@
+
+@font-face{font-family:Forum;src:url('fonts/Forum-400.woff2')}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0a0a0c;color:#f5ebd9;font-family:'Cormorant Garamond',Georgia,serif}a{color:#3fcfb8}a:focus-visible{outline:2px solid #c9a227;outline-offset:5px}.site-head{border-bottom:1px solid #493c22;background:#0a0a0c}.site-bar{max-width:1152px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:28px;padding:24px}.site-mark{font:24px Forum,serif;letter-spacing:.12em;text-decoration:none;color:#f5ebd9}.site-mark small{display:block;font:11px 'Courier New',monospace;letter-spacing:.04em;color:#c9a227;margin-top:8px}.site-nav{display:flex;gap:24px;flex-wrap:wrap;font:14px Forum,serif;letter-spacing:.08em}.site-nav a{text-decoration:none;color:#d9d0bc}.site-nav a:hover,.site-nav a[aria-current]{color:#3fcfb8}.site-foot{max-width:1152px;margin:auto;padding:32px 24px;border-top:1px solid #493c22;display:flex;justify-content:space-between;gap:16px;color:#bfb39b;font-size:17px}.draft-content{max-width:1000px;margin:auto;padding:48px 24px;font-size:22px;line-height:1.6}.draft-content h1,.draft-content h2,.draft-content h3{font-family:Forum,serif}.draft-content img{max-width:100%;height:auto}.draft-content .has-obsidian-background-color{background:#131114}.draft-content .has-panel-background-color{background:#18151a}.draft-content .wp-block-group{margin:30px 0}.draft-notice{border:1px solid #c9a227;padding:14px 20px;color:#c9a227;font:14px 'Courier New',monospace}@media(max-width:700px){.site-bar{align-items:flex-start;flex-direction:column}.site-nav{gap:18px}.site-foot{flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.cl-lab.cl-lab,.cl-mechape.cl-mechape{width:100%;margin-left:0}
+@font-face{font-family:LabBrands;src:url('fonts/fa-brands-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+.lab-socialbar{border-bottom:1px solid #28271f;background:#08090a}
+.lab-social-inner{max-width:1152px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.lab-social-caption{font:12px 'Courier New',monospace;letter-spacing:.12em;color:#b9ab87}
+.lab-social-links{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.lab-social-links a{min-height:44px;display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid #574826;color:#dfc06b;text-decoration:none;font:13px Forum,serif;letter-spacing:.04em;transition:background .2s,color .2s,border-color .2s}
+.lab-social-links a:hover,.lab-social-links a:focus-visible{color:#72ead8;border-color:#3fcfb8;background:#11241f}
+.lab-social-links svg{width:18px;height:18px;fill:currentColor;flex:none}
+.lab-brand-icon{font:18px LabBrands;line-height:1;display:block;font-style:normal}
+@media(max-width:700px){.lab-social-inner{padding:12px 20px;justify-content:center}.lab-social-caption{display:none}.lab-social-links{justify-content:center;gap:6px}.lab-social-links a{padding:9px 10px}}
+@media(prefers-reduced-motion:reduce){.lab-social-links a{transition:none}}
+
+.skip-link{position:absolute;left:16px;top:-100px;z-index:99999;background:#f5ebd9;color:#0a0a0c;padding:14px}
+.skip-link:focus{top:16px}
+.site-nav ul{display:flex;list-style:none;gap:24px;flex-wrap:wrap;margin:0;padding:0}
+.site-nav .current-menu-item>a,.site-nav .current_page_item>a{color:#3fcfb8}
+.lab-page-title{max-width:1104px;margin:40px auto 0;padding:0 24px;font:48px Forum,serif}
+.lab-entry{max-width:1104px;margin:40px auto;padding:0 24px;font-size:22px;line-height:1.6}
+.lab-entry img{max-width:100%;height:auto}
+.lab-plain-content{max-width:1104px;margin:auto;padding:30px 24px;font-size:22px;line-height:1.6}
+.lab-plain-content img{max-width:100%;height:auto}
+.has-obsidian-background-color{background:#131114}.has-panel-background-color{background:#18151a}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
