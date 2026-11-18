@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('cma-signal', get_template_directory_uri() . '/assets/signal.js', array(), filemtime(get_template_directory() . '/assets/signal.js'), true);
 });
 function cma_default_navigation() {
-    $links = array('/' => __('The Lab', 'codemonkeyarts'), '/mechape/' => __('MechApe', 'codemonkeyarts'), '/haunted-tech/' => __('Haunted Tech', 'codemonkeyarts'));
+    $links = array('/' => __('The Lab', 'codemonkeyarts'), '/mechape/' => __('MechApe', 'codemonkeyarts'), '/haunted-tech/' => __('Haunted Tech', 'codemonkeyarts'), '/signal-lab/' => __('Signal Lab', 'codemonkeyarts'));
     foreach ($links as $path => $label) {
         $current = ($path === '/' && is_front_page()) || ($path !== '/' && is_page(trim($path, '/')));
         printf('<a href="%s"%s>%s</a>', esc_url(home_url($path)), $current ? ' aria-current="page"' : '', esc_html($label));

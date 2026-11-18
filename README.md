@@ -6,7 +6,7 @@ Signal Lab shares the Forum / Cormorant Garamond typography, dark theatrical atm
 
 ## Build and install
 
-Requires WordPress 6.0+ and PHP 7.4+. Run `python build.py` to create `dist/codemonkeyarts-1.0.1.zip`. Upload that ZIP under Appearance → Themes → Add Theme → Upload Theme, preview, then activate **CodeMonkeyArts Signal Lab**.
+Requires WordPress 6.0+ and PHP 7.4+. Run `python build.py` to create `dist/codemonkeyarts-1.0.2.zip`. Upload that ZIP under Appearance → Themes → Add Theme → Upload Theme, preview, then activate **CodeMonkeyArts Signal Lab**.
 
 Set Settings → Reading to a static homepage containing the Lab project content. The theme supplies the new front-page hero; `assets/signal.css` suppresses the legacy `.cl-lab-hero` only on the homepage. Existing Lab, MechApe and Haunted Tech content remains editable in WordPress. This theme does not import page content or change publication status. MechApe Image Studio remains a draft on the production site.
 
@@ -33,3 +33,7 @@ The original **CodeMonkey Lab** theme is retained on the server. Activate it und
 ## License
 
 Theme code: GPL-2.0-or-later. Bundled fonts retain their own licenses; see `THIRD-PARTY.md` and the font license files. Brand names, product artwork, and WordPress page content are not granted a separate trademark or content license by this repository.
+
+## Mascot and showcase
+
+The pixel monkey is used as the site header mark and Signal Lab theme mascot. Its source reference was supplied by the site owner; the tech-styled transparent derivative is in `codemonkeyarts/assets/codemonkeyarts-pixel-mascot.png`. The theme is featured at `/signal-lab/` and in the homepage project list. See `content/` for the editable page copy and preview asset.

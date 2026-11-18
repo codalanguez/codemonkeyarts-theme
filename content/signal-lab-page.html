@@ -1,0 +1,65 @@
+<!-- wp:html -->
+<style>
+.cl-lab{--lb-pitch:#0A0A0C;--lb-teal:#3FCFB8;--lb-magenta:#E83A6F;--lb-electric:#3B7DB8;--lb-ivory:#F5EBD9;--lb-gold:#C9A227;--lb-oxblood:#5B0E12;position:relative;width:100vw;margin-left:calc(50% - 50vw);background:var(--lb-pitch);color:var(--lb-ivory);font-family:'Cormorant Garamond','EB Garamond',Georgia,serif;font-size:1.2rem;line-height:1.65;overflow:hidden}
+.cl-lab *{box-sizing:border-box}
+.cl-lab::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cl-lab::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;background:repeating-linear-gradient(0deg,transparent 0 2px,rgba(63,207,184,.35) 2px 3px)}
+.cl-lab-wrap{position:relative;z-index:2;max-width:68rem;margin:0 auto;padding:0 1.5rem}
+.cl-lab-hero{padding:5.5rem 0 3.5rem;text-align:center}
+.cl-lab-prompt{font-family:'Courier New',ui-monospace,monospace;font-size:.95rem;letter-spacing:.06em;color:var(--lb-teal);margin:0 0 2rem;opacity:.9}
+.cl-lab-prompt .dim{color:var(--lb-ivory);opacity:.45}
+.cl-lab-cursor{display:inline-block;margin-left:.15em;animation:lbblink 1.1s steps(1) infinite}
+@keyframes lbblink{50%{opacity:0}}
+.cl-lab-title{font-family:'Forum','Cinzel',serif;font-size:clamp(3rem,8vw,5.5rem);letter-spacing:.16em;margin:0 0 1rem;color:var(--lb-ivory);text-shadow:0 0 20px rgba(201,162,39,.4)}
+.cl-lab-title em{font-style:normal;color:var(--lb-gold)}
+.cl-lab-sub{max-width:40rem;margin:0 auto;font-style:italic;font-size:1.3rem;opacity:.85}
+.cl-lab-rule{width:8rem;height:1px;background:linear-gradient(90deg,transparent,var(--lb-gold),transparent);border:0;margin:2.5rem auto 0}
+.cl-lab-ls{font-family:'Courier New',ui-monospace,monospace;font-size:.85rem;letter-spacing:.15em;color:var(--lb-teal);opacity:.7;text-align:center;margin:0 0 3rem}
+.cl-lab-exhibits{padding:1rem 0 5rem;display:grid;gap:3rem}
+.cl-lab-card{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);border:1px solid rgba(201,162,39,.35);background:linear-gradient(150deg,rgba(59,125,184,.07),rgba(10,10,12,.65));position:relative;transition:border-color .3s ease,box-shadow .3s ease}
+.cl-lab-card:hover{border-color:var(--lb-teal);box-shadow:0 0 45px rgba(63,207,184,.12)}
+.cl-lab-card::before,.cl-lab-card::after{content:"";position:absolute;width:1.6rem;height:1.6rem;border-color:var(--lb-gold);border-style:solid}
+.cl-lab-card::before{top:-.55rem;left:-.55rem;border-width:2px 0 0 2px}
+.cl-lab-card::after{bottom:-.55rem;right:-.55rem;border-width:0 2px 2px 0}
+.cl-lab-card-media{display:flex;align-items:center;justify-content:center;padding:2.5rem;border-right:1px solid rgba(201,162,39,.2);background:radial-gradient(ellipse at center,rgba(63,207,184,.07),transparent 70%)}
+.cl-lab-card-media img{max-width:100%;height:auto;display:block}
+.cl-lab-card-media .roundicon{width:9rem;height:9rem;border-radius:1.4rem;box-shadow:0 0 0 1px rgba(201,162,39,.5),0 0 40px rgba(63,207,184,.25),0 15px 40px rgba(0,0,0,.7)}
+.cl-lab-card-media .themeshot{border:1px solid rgba(201,162,39,.4);box-shadow:0 15px 45px rgba(0,0,0,.75)}
+.cl-lab-card-body{padding:2.5rem}
+.cl-lab-file{font-family:'Courier New',ui-monospace,monospace;font-size:.75rem;letter-spacing:.22em;color:var(--lb-magenta);margin:0 0 .7rem;text-transform:uppercase}
+.cl-lab-card-body h2{font-family:'Forum','Cinzel',serif;font-size:2rem;letter-spacing:.08em;margin:0 0 .4rem;color:var(--lb-ivory)}
+.cl-lab-card-tag{font-family:'Forum','Cinzel',serif;color:var(--lb-gold);font-size:1.15rem;letter-spacing:.04em;margin:0 0 1rem}
+.cl-lab-card-body p.desc{margin:0 0 1.4rem;opacity:.88}
+.cl-lab-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.8rem;padding:0;list-style:none}
+.cl-lab-chips li{font-family:'Courier New',ui-monospace,monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(63,207,184,.4);color:var(--lb-teal);padding:.25rem .7rem}
+.cl-lab-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.cl-lab-btn{font-family:'Forum','Cinzel',serif;letter-spacing:.12em;text-transform:uppercase;font-size:.9rem;padding:.75rem 1.7rem;border:1px solid var(--lb-teal);color:var(--lb-teal);text-decoration:none;transition:all .25s ease}
+.cl-lab-btn:hover{background:var(--lb-teal);color:var(--lb-pitch);box-shadow:0 0 25px rgba(63,207,184,.4)}
+.cl-lab-btn--primary{background:var(--lb-teal);color:var(--lb-pitch)}
+.cl-lab-btn--primary:hover{background:transparent;color:var(--lb-teal)}
+.cl-lab-note{font-family:'Courier New',ui-monospace,monospace;font-size:.75rem;letter-spacing:.15em;color:var(--lb-ivory);opacity:.5;margin:1.2rem 0 0}
+.cl-lab-outro{text-align:center;border-top:1px solid rgba(91,14,18,.6);padding:4rem 0 5.5rem}
+.cl-lab-outro p{max-width:36rem;margin:0 auto 1.6rem;font-style:italic;opacity:.8}
+.cl-lab-outro a.gh{font-family:'Courier New',ui-monospace,monospace;font-size:.9rem;letter-spacing:.18em;color:var(--lb-gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .25s ease}
+.cl-lab-outro a.gh:hover{border-color:var(--lb-gold)}
+@media (max-width:781px){.cl-lab-card{grid-template-columns:1fr}.cl-lab-card-media{border-right:0;border-bottom:1px solid rgba(201,162,39,.2);padding:2rem}.cl-lab-card-body{padding:1.75rem}.cl-lab-hero{padding:3.5rem 0 2.5rem}}
+@media (prefers-reduced-motion:reduce){.cl-lab-cursor{animation:none}}
+
+.lab-plain-content:has(.signal-lab-page){max-width:none;padding:0}
+.signal-lab-page .signal-details{max-width:850px;margin:0 auto 60px;padding:0 8px}
+.signal-lab-page .signal-details h2{font:clamp(28px,5vw,42px) Forum,serif;color:var(--lb-gold)}
+.signal-lab-page .signal-details dt{font:25px Forum,serif;color:var(--lb-gold);margin:32px 0 12px}
+.signal-lab-page .signal-details dd{margin:0;color:#d4d5c9;line-height:1.65}
+.signal-lab-page .cl-lab-hero{padding-top:3.5rem}
+</style>
+<div class="cl-lab signal-lab-page"><div class="cl-lab-wrap">
+<header class="cl-lab-hero"><img class="signal-theme-logo" src="/wp-content/themes/codemonkeyarts/assets/codemonkeyarts-pixel-mascot.png" alt="CodeMonkeyArts pixel monkey mascot with cyan glasses and a gold circuit collar" width="112" height="112"><p class="cl-lab-prompt">A WordPress theme from <a href="/">The Lab</a></p><h1 class="cl-lab-title">SIGNAL <em>LAB</em></h1><p class="cl-lab-sub">Creative engineering, dressed in gold and static. The custom theme powering CodeMonkeyArts.</p></header>
+<div class="cl-lab-exhibits"><article class="cl-lab-card">
+<div class="cl-lab-card-media"><a href="https://codemonkeyarts.com/wp-content/uploads/2026/11/signal-lab-theme-preview.jpg" aria-label="View the full Signal Lab theme screenshot"><img class="themeshot" src="https://codemonkeyarts.com/wp-content/uploads/2026/11/signal-lab-theme-preview.jpg" alt="Signal Lab homepage: gold Creative engineering headline beside a cyan terminal illustration on a dark circuit-grid background" width="1233" height="761"></a></div>
+<div class="cl-lab-card-body"><p class="cl-lab-file">exhibit_03 / status: powering this lab</p><h2>CodeMonkeyArts Signal Lab</h2><p class="cl-lab-card-tag">A home for apps, workflows, and experiments.</p><p class="desc">Signal Lab brings the theatrical character of Coda Languez’s author site into a creative-engineering portfolio. Antique-gold headings and buttons sit against deep ink, with cyan circuit grids and magenta chromatic accents. The terminal illustration is built in CSS, and the text stays readable through every effect.</p>
+<ul class="cl-lab-chips"><li>Classic WordPress</li><li>PHP templates</li><li>Self-hosted fonts</li><li>GPL-2.0+</li></ul><div class="cl-lab-actions"><a class="cl-lab-btn cl-lab-btn--primary" href="/">View the live theme</a><a class="cl-lab-btn" href="#signal-features">Explore the features</a></div></div></article></div>
+<section id="signal-features" class="signal-details"><p class="cl-lab-file">inside the theme</p><h2>Built for creative engineering.</h2><dl><dt>Gold, circuitry, and a little interference.</dt><dd>Forum display lettering and Cormorant Garamond body copy keep the literary connection. A terminal panel, circuit grids, scanlines, and short wordmark glitches give the Lab its own identity.</dd><dt>Projects take the stage.</dt><dd>A dedicated homepage introduces the work, while responsive cards and app pages provide room for previews, descriptions, and clear next steps.</dd><dt>Motion on your terms.</dt><dd>An Effects toggle remembers your preference in the browser. System reduced-motion settings take priority, and decorative animation never scrambles the readable text.</dd><dt>A focused social bar.</dt><dd>GitHub, Payhip, Civitai, Substack, and Threads connect the Lab to the places where the work continues.</dd><dt>Classic WordPress, carefully assembled.</dt><dd>PHP templates, lightweight CSS, a small motion-control script, and locally hosted fonts. Built for WordPress 6.0 or later and PHP 7.4 or later. Theme code is GPL-2.0-or-later; bundled fonts retain their own licenses.</dd></dl></section>
+<footer class="cl-lab-outro"><p>Two themes, one slightly haunted family. Signal Lab powers the creative-engineering portfolio; Haunted Tech gives the author site its dark art-deco home.</p><div class="cl-lab-actions" style="justify-content:center"><a class="cl-lab-btn" href="/haunted-tech/">Explore Haunted Tech</a><a class="cl-lab-btn" href="/#cma-projects">Back to the Lab</a></div></footer>
+</div></div>
+
+<!-- /wp:html -->

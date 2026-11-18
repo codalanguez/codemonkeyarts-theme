@@ -89,5 +89,10 @@ body .cl-lab-cursor,body .cl-mk-cursor{animation-iteration-count:3}
 body .cl-lab .cl-lab-card::before{border-color:var(--cma-gold)}
 body .cl-lab .cl-lab-btn--primary{background:var(--cma-gold);border-color:var(--cma-gold);color:#151109}
 body .cl-lab .cl-lab-btn--primary:hover{background:#ebce89;color:#151109}
+.site-mark{display:inline-flex;align-items:center;gap:12px}
+.cma-mascot{width:64px;height:64px;object-fit:contain;image-rendering:pixelated;flex:none}
+.cma-brand-copy{display:block;min-width:0}
+.signal-theme-logo{display:block;width:112px;height:112px;object-fit:contain;image-rendering:pixelated;margin:0 auto 20px}
+@media(max-width:480px){.site-mark{gap:8px;font-size:26px}.cma-mascot{width:40px;height:48px}.site-mark small{font-size:7px;letter-spacing:.02em}}
 .cma-still *,.cma-still *::before,.cma-still *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

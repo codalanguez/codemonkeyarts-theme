@@ -9,3 +9,7 @@ Typography is self-hosted from the existing CodeMonkey Lab / Haunted Tech font b
 - Retained unused Inter font assets: SIL Open Font License 1.1 (`Inter-OFL.txt`); not loaded by this theme.
 
 SVG service icons are retained from the existing Lab social bar and identify the linked services. Service names and logos belong to their respective owners.
+
+## Pixel mascot reference
+
+Site-owner-supplied reference: `pixel__20_by_nointegri_tae-dbwryqz.gif`. The filename attributes the reference to nointegri_tae. A tech-styled derivative was generated with the built-in image-generation tool for use as the site and theme logo. The original reference and derivative branding artwork are not covered by the theme code GPL grant.
